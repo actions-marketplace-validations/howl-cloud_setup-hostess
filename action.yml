@@ -1,0 +1,14 @@
+name: Setup Hostess
+description: Install the latest Hostess CLI
+author: Horizon Web Labs
+
+branding:
+  icon: upload-cloud
+  color: gray-dark
+
+runs:
+  using: composite
+  steps:
+    - name: Install Hostess CLI
+      shell: bash
+      run: ${{ github.action_path }}/install.sh
